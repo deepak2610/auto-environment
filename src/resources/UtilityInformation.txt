@@ -1,0 +1,24 @@
+
+
+
+Team needs to switch a lot between local and cloud platform( docker containers) for execution.
+To do this , they had to
+
+Furthermore , the execution can be carried out in one of many AUT envts (Local / Dev / UAT / SIT)
+
+
+if docker execution :
+        a) Modify a docker-compose file at specific places providing a unique name , and 2 random ports (n and n+1)
+        b) run a docker compose command from command line
+        c. Update the properties file with docker name created in b ,, and user chosen application env
+
+
+    else
+        a. Run a command (selenium hub) from command line
+        b. Run a command (selenium node) from command line
+        c. Update the properties file with corresponding application environment url and update a flag specifying
+        execution should be carried out locally
+
+
+
+

@@ -1,0 +1,32 @@
+
+Migrating from JBehave to Cucumber , we need to convert all our .jbehave extension files to .feature(gherkin) files.
+
+there are some syntactical differences in the content of the file , so all that needs to be taken care using
+some rules found out by analysing the differences across the two files.
+
+Example :
+
+1. If anything in jbehave ends with a colon , remove that line
+2. MOre rule
+3. Even more rules...
+
+
+JBehave Stories lie under a parent folder (resorces > stories) ,and grouped by squads
+
+resources
+    stories
+        team1
+          story1.story
+          story2.story
+          story3.story
+        team2
+          story4.story
+          story5.story
+        team3
+          story6.story
+          story7.story
+
+
+          and so on.....
+
+
